@@ -464,10 +464,10 @@
             </objects>
             <point key="canvasLocation" x="780" y="-589"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Donor View Controller-->
         <scene sceneID="In8-ox-fSr">
             <objects>
-                <viewController storyboardIdentifier="home" id="HmM-Fi-xzn" customClass="HomeViewController" customModule="GrantLink" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="donor" id="HmM-Fi-xzn" customClass="DonorViewController" customModule="GrantLink" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AIN-aY-BXd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -497,15 +497,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Donate"/>
                                 <connections>
+                                    <action selector="donatePressed:" destination="HmM-Fi-xzn" eventType="touchUpInside" id="fOp-MF-Cak"/>
                                     <segue destination="8YA-ah-48F" kind="show" id="WJ8-yW-FK1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r10-5o-uw3">
-                                <rect key="frame" x="165" y="528" width="86" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Send Report"/>
-                                <connections>
-                                    <action selector="sendReportPressed:" destination="HmM-Fi-xzn" eventType="touchUpInside" id="ceD-GO-AwW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDU-Zi-b9n">
@@ -513,23 +506,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Account"/>
                                 <connections>
-                                    <action selector="accountPressed:" destination="HmM-Fi-xzn" eventType="touchUpInside" id="4id-ir-xzQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxT-dP-akU">
-                                <rect key="frame" x="308" y="78" width="86" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Set Location"/>
-                                <connections>
-                                    <action selector="setLocationPressed:" destination="HmM-Fi-xzn" eventType="touchUpInside" id="UeG-db-tJu"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRp-0P-nKQ">
-                                <rect key="frame" x="147" y="633" width="123" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="See all requesters"/>
-                                <connections>
-                                    <action selector="seeAllPins:" destination="HmM-Fi-xzn" eventType="touchUpInside" id="NAb-oX-IiY"/>
+                                    <action selector="accountPressed:" destination="HmM-Fi-xzn" eventType="touchUpInside" id="4Ay-BM-Im8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -543,7 +520,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="auz-B7-leJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1207" y="139"/>
+            <point key="canvasLocation" x="1619" y="268"/>
         </scene>
         <!--Payment Table View Controller-->
         <scene sceneID="vHE-iF-Ji2">
@@ -642,7 +619,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VcQ-dK-OIA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1907" y="520"/>
+            <point key="canvasLocation" x="1801" y="953"/>
         </scene>
         <!--Report View Controller-->
         <scene sceneID="Ba9-di-OcO">
@@ -727,6 +704,108 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fsu-XC-qLL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2584" y="429"/>
+        </scene>
+        <!--Type View Controller-->
+        <scene sceneID="TLX-U9-6Ww">
+            <objects>
+                <viewController storyboardIdentifier="type" id="hq2-ZT-f7e" customClass="TypeViewController" customModule="GrantLink" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFill" id="d2R-H4-rMA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtR-LB-r1Y">
+                                <rect key="frame" x="173" y="308" width="68" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Homeless"/>
+                                <connections>
+                                    <action selector="homelessPressed:" destination="hq2-ZT-f7e" eventType="touchUpInside" id="d8f-uu-ZVF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9kg-4R-ufk">
+                                <rect key="frame" x="186" y="474" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Donor"/>
+                                <connections>
+                                    <action selector="donatePressed:" destination="hq2-ZT-f7e" eventType="touchUpInside" id="giN-vu-jbB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.55186748500000005" green="0.73502260450000001" blue="0.83923178909999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="cF0-z2-IRA" colorLabel="IBBuiltInLabel-Blue"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5ec-Q5-6xM"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4bA-cQ-9A6" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="215.94202898550725" y="138.61607142857142"/>
+        </scene>
+        <!--Homeless View Controller-->
+        <scene sceneID="bAH-5L-gRJ">
+            <objects>
+                <viewController storyboardIdentifier="homeless" id="Vgh-f7-i82" customClass="HomelessViewController" customModule="GrantLink" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t4F-zJ-BrW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7w-ja-Lpi">
+                                <rect key="frame" x="20" y="44" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <action selector="logoutPressed:" destination="Vgh-f7-i82" eventType="touchUpInside" id="7I5-vF-vce"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="iMi-V5-eNs">
+                                <rect key="frame" x="0.0" y="116" width="414" height="352"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3d-SE-P4U">
+                                <rect key="frame" x="126" y="783" width="164" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="View Pending Payments"/>
+                                <connections>
+                                    <action selector="pendingPaymentsPressed:" destination="Vgh-f7-i82" eventType="touchUpInside" id="Pbn-el-tkS"/>
+                                    <action selector="viewPaymentsPressed:" destination="Vgh-f7-i82" eventType="touchUpInside" id="Xen-JN-SrM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mfe-qT-q9j">
+                                <rect key="frame" x="20" y="82" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Account"/>
+                                <connections>
+                                    <action selector="accountPressed:" destination="Vgh-f7-i82" eventType="touchUpInside" id="ESW-4o-191"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqO-cw-cfB">
+                                <rect key="frame" x="165" y="499" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Set Location"/>
+                                <connections>
+                                    <action selector="setLocationPressed:" destination="Vgh-f7-i82" eventType="touchUpInside" id="74Z-GA-eED"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nS4-os-ZgA">
+                                <rect key="frame" x="165" y="610" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Send Report"/>
+                                <connections>
+                                    <action selector="sendReportPressed:" destination="Vgh-f7-i82" eventType="touchUpInside" id="MbE-Es-XgY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="IAj-qu-hTa"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Uyz-61-nj4"/>
+                    <connections>
+                        <outlet property="mapViewController" destination="iMi-V5-eNs" id="TIB-IV-TpG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8PE-5i-vin" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1619" y="-419"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.54374402759999996" green="0.69964039330000005" blue="0.80785918239999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

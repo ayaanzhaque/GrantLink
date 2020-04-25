@@ -55,7 +55,7 @@ class SignUpViewController: UIViewController {
         else{
         Auth.auth().createUser(withEmail: email.text!, password: password.text!){ (user, error) in
          if error == nil {
-           let vc = self.storyboard?.instantiateViewController(identifier: "home" ) as! HomeViewController
+           let vc = self.storyboard?.instantiateViewController(identifier: "type" ) as! TypeViewController
            vc.modalPresentationStyle = .fullScreen
            self.present(vc, animated: true)
 

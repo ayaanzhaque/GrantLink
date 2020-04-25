@@ -36,7 +36,7 @@ class StartViewController: UIViewController{
 
         
         if Auth.auth().currentUser != nil {
-            let vc = storyboard?.instantiateViewController(identifier: "home" ) as! HomeViewController
+            let vc = storyboard?.instantiateViewController(identifier: "type" ) as! TypeViewController
             vc.modalPresentationStyle = .fullScreen
             present(vc, animated: true)
         }
@@ -52,7 +52,7 @@ class StartViewController: UIViewController{
         
         Auth.auth().signIn(withEmail: email.text!, password: pass.text!) { (user, error) in
            if error == nil{
-            let vc = self.storyboard?.instantiateViewController(identifier: "home" ) as! HomeViewController
+            let vc = self.storyboard?.instantiateViewController(identifier: "type" ) as! TypeViewController
             vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true)
 
