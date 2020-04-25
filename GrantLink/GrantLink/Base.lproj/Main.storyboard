@@ -679,7 +679,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="donatePressed:" destination="HmM-Fi-xzn" eventType="touchUpInside" id="ONu-co-XmN"/>
+                                    <action selector="showUsersPressed:" destination="HmM-Fi-xzn" eventType="touchUpInside" id="D3u-yt-pxB"/>
                                 </connections>
                             </button>
                         </subviews>
