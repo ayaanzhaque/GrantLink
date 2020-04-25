@@ -36,6 +36,12 @@ class ReportViewController: UIViewController,UIImagePickerControllerDelegate, UI
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func submitPressed(_ sender: Any) {
+        
+        
+        
+    }
+    
     @IBAction func backPressed(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(identifier: "homeless" ) as! HomelessViewController
         vc.modalPresentationStyle = .fullScreen
@@ -67,10 +73,6 @@ class ReportViewController: UIViewController,UIImagePickerControllerDelegate, UI
         
     }
     
-    
-    @IBAction func submitPressed(_ sender: Any) {
-        
-    }
     
     @objc func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
 

@@ -1111,7 +1111,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="donatePressed:" destination="HmM-Fi-xzn" eventType="touchUpInside" id="D2Z-33-P0F"/>
+                                    <action selector="submitPressed:" destination="K1D-uo-AFD" eventType="touchUpInside" id="1c7-mW-441"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xy4-DA-dLd">
