@@ -417,46 +417,143 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AYt-Hs-0gg">
-                                <rect key="frame" x="159" y="199" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ayaan Haque" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AYt-Hs-0gg">
+                                <rect key="frame" x="97" y="309" width="220" height="50"/>
+                                <color key="backgroundColor" red="0.55294117649999996" green="0.73333333329999995" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Vz0-1k-5b6"/>
+                                    <constraint firstAttribute="width" constant="220" id="wQe-8C-h11"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hello, needs money to buy a meal" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cHG-4i-939">
+                                <rect key="frame" x="39.5" y="384" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="335" id="T7T-OE-a1M"/>
+                                    <constraint firstAttribute="height" constant="50" id="y5D-Re-fep"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1234 5678 9123 4567" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CYS-Zm-rJ1">
+                                <rect key="frame" x="102" y="514" width="210" height="35"/>
+                                <color key="backgroundColor" red="0.55294117649999996" green="0.73333333329999995" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="g9T-Rp-0fX"/>
+                                    <constraint firstAttribute="width" constant="210" id="qKd-YZ-GRd"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Bio" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cHG-4i-939">
-                                <rect key="frame" x="159" y="265" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZCV-1v-Rdq">
+                                <rect key="frame" x="102" y="644" width="210" height="35"/>
+                                <color key="backgroundColor" red="0.55294117649999996" green="0.73333333329999995" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="1FU-1i-BmS"/>
+                                    <constraint firstAttribute="width" constant="210" id="hrW-Tt-1Fl"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Card Number" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CYS-Zm-rJ1">
-                                <rect key="frame" x="150" y="337" width="115" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Expiration Date" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ucq-RZ-kC6">
-                                <rect key="frame" x="144" y="403" width="127" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CVV" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZCV-1v-Rdq">
-                                <rect key="frame" x="144" y="463" width="127" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XjY-Gm-FKz">
-                                <rect key="frame" x="26" y="44" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XjY-Gm-FKz">
+                                <rect key="frame" x="30" y="74" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="fFr-nQ-TTq"/>
+                                    <constraint firstAttribute="height" constant="30" id="n6k-cX-5DW"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="backPressed:" destination="GHt-Oy-dTv" eventType="touchUpInside" id="x2f-Ma-05a"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Untitled drawing (1)" translatesAutoresizingMaskIntoConstraints="NO" id="gAU-2f-X64">
+                                <rect key="frame" x="-48" y="44" width="510" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="7xS-Fx-kR9"/>
+                                    <constraint firstAttribute="width" constant="510" id="cfW-tW-3LZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkd-d8-p21">
+                                <rect key="frame" x="115.5" y="472" width="183" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="gSi-MS-z2g"/>
+                                    <constraint firstAttribute="width" constant="183" id="yqS-uk-iFY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="12/22" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ucq-RZ-kC6">
+                                <rect key="frame" x="102" y="579" width="210" height="35"/>
+                                <color key="backgroundColor" red="0.55294117649999996" green="0.73333333329999995" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="N7O-2Q-1CT"/>
+                                    <constraint firstAttribute="height" constant="35" id="iqJ-bx-6hO"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.55294117649999996" green="0.73333333329999995" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="gAU-2f-X64" firstAttribute="top" secondItem="ZdT-2h-G8L" secondAttribute="top" id="3qg-Rq-cuL"/>
+                            <constraint firstItem="ZCV-1v-Rdq" firstAttribute="top" secondItem="ucq-RZ-kC6" secondAttribute="bottom" constant="30" id="6O7-f5-Lld"/>
+                            <constraint firstItem="XjY-Gm-FKz" firstAttribute="top" secondItem="ZdT-2h-G8L" secondAttribute="top" constant="30" id="9Xi-jM-cja"/>
+                            <constraint firstItem="AYt-Hs-0gg" firstAttribute="centerX" secondItem="ZdT-2h-G8L" secondAttribute="centerX" id="Cq9-sS-rrv"/>
+                            <constraint firstItem="ucq-RZ-kC6" firstAttribute="centerX" secondItem="ZdT-2h-G8L" secondAttribute="centerX" id="K5b-EZ-oXd"/>
+                            <constraint firstItem="cHG-4i-939" firstAttribute="centerX" secondItem="ZdT-2h-G8L" secondAttribute="centerX" id="KR2-cS-FRN"/>
+                            <constraint firstItem="CYS-Zm-rJ1" firstAttribute="top" secondItem="zkd-d8-p21" secondAttribute="bottom" constant="20" id="MMp-WY-h4t"/>
+                            <constraint firstItem="CYS-Zm-rJ1" firstAttribute="top" secondItem="cHG-4i-939" secondAttribute="bottom" constant="80" id="QMp-MJ-AfE"/>
+                            <constraint firstItem="AYt-Hs-0gg" firstAttribute="top" secondItem="ZdT-2h-G8L" secondAttribute="top" constant="265" id="QS6-Ff-9Jl"/>
+                            <constraint firstItem="ZCV-1v-Rdq" firstAttribute="centerX" secondItem="ZdT-2h-G8L" secondAttribute="centerX" id="TjM-GC-Lyb"/>
+                            <constraint firstItem="cHG-4i-939" firstAttribute="top" secondItem="AYt-Hs-0gg" secondAttribute="bottom" constant="25" id="dzQ-he-CTY"/>
+                            <constraint firstItem="XjY-Gm-FKz" firstAttribute="leading" secondItem="ZdT-2h-G8L" secondAttribute="leading" constant="30" id="ivX-qf-XZU"/>
+                            <constraint firstItem="zkd-d8-p21" firstAttribute="centerX" secondItem="ZdT-2h-G8L" secondAttribute="centerX" id="jBr-JC-lWX"/>
+                            <constraint firstItem="ucq-RZ-kC6" firstAttribute="top" secondItem="CYS-Zm-rJ1" secondAttribute="bottom" constant="30" id="lYa-Ib-n6X"/>
+                            <constraint firstItem="CYS-Zm-rJ1" firstAttribute="centerX" secondItem="ZdT-2h-G8L" secondAttribute="centerX" id="q58-kq-Xli"/>
+                            <constraint firstItem="gAU-2f-X64" firstAttribute="centerX" secondItem="ZdT-2h-G8L" secondAttribute="centerX" id="qAN-Bh-Xwg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ZdT-2h-G8L"/>
                     </view>
                     <connections>
@@ -469,7 +566,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1h8-X2-fJG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="780" y="-589"/>
+            <point key="canvasLocation" x="779.71014492753625" y="-589.28571428571422"/>
         </scene>
         <!--Donor View Controller-->
         <scene sceneID="In8-ox-fSr">
