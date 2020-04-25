@@ -531,7 +531,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="jca-Ta-Dvc">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="custom" id="jca-Ta-Dvc" customClass="CustomCell" customModule="GrantLink" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jca-Ta-Dvc" id="fJE-1g-7G8">
@@ -545,6 +545,7 @@
                             <outlet property="delegate" destination="y9r-1f-3Gm" id="15M-xr-vF7"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="NNX-sJ-ZRa"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pH9-Wt-Wiz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

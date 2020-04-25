@@ -8,30 +8,86 @@
 
 import UIKit
 
+struct cellData {
+    let message : String?
+}
+
 class PaymentTableViewController: UITableViewController {
 
+    let cellId = "cellId"
+     var products : [Product] = [Product]()
+    override func viewDidLoad() {
+     super.viewDidLoad()
+     createProductArray()
+     tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
+     
+     // Do any additional setup after loading the view, typically from a nib.
+     
+     }
+    override func didReceiveMemoryWarning() {
+     super.didReceiveMemoryWarning()
+     // Dispose of any resources that can be recreated.
+     }
+     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+     let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
+     let currentLastItem = products[indexPath.row]
+     cell.textLabel?.text = currentLastItem.productName
+     return cell
+     }
+     
+     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+     return products.count
+     }
+      func createProductArray() {
+        products.append(Product(productName: "Glasses", productDesc: "This is best Glasses I've ever seen"))
+            products.append(Product(productName: "Desert", productDesc: "This is so yummy"))
+            products.append(Product(productName: "Camera Lens", productDesc: "I wish I had this camera lens"))
+         products.append(Product(productName: "Glasses", productDesc: "This is best Glasses I've ever seen"))
+        products.append(Product(productName: "Glasses", productDesc: "This is best Glasses I've ever seen"))
+        }
+    
+    /*
+    var data = [cellData]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        data = [cellData.init(message: "testDataCell"), cellData.init(message: "testDataCell"), cellData.init(message: "testDataCell"), cellData.init(message: "testDataCell")]
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        self.tableView.register(CustomCell.self, forCellReuseIdentifier: "custom")
     }
 
+
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom") as! CustomCell
+        
+        cell.message = data[indexPath.row].message
+        return cell
+    }
     // MARK: - Table view data source
 
+
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return data.count
+    }
+*/
+    
+    /*
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0
     }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
-
+    */
+    
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
