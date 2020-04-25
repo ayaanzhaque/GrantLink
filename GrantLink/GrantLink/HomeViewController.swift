@@ -54,6 +54,8 @@ class HomeViewController: UIViewController {
         annotation.title = "Ayaan Haque"
         annotation.subtitle = "Hello, needs money to buy a meal"
         mapViewController.addAnnotation(annotation)
+        
+        print(mapViewController.userLocation.location?.coordinate.latitude, mapViewController.userLocation.location?.coordinate.longitude)
     }
     
     @IBAction func accountPressed(_ sender: Any) {
