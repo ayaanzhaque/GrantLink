@@ -27,6 +27,8 @@ class HomelessViewController: UIViewController {
             // Show alert letting the user know they have to turn this on.
           }
         }
+    
+
         func checkLocationAuthorization() {
           switch CLLocationManager.authorizationStatus() {
           case .authorizedWhenInUse:

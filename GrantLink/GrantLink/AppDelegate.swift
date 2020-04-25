@@ -29,9 +29,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         }
         
+        createNotification(title: "testTitle", body: "testBody", timer: 5)
       return true
     }
 
+    func createNotification(title: String, body: String, timer: Int) {
+        
+        let center = UNUserNotificationCenter.current()
+        let content = UNMutableNotificationContent()
+        content.title = title
+        content.body = body
+        content.sound = .default
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(timer), repeats: false)
+        
+        let request = UNNotificationRequest(identifier: "title", content: content, trigger: trigger)
+        
+        center.add(request) { (error) in
+            if error != nil {
+                print("Error = \(error?.localizedDescription ?? "error local notification")")
+            }
+            
+        }
+    }
+    
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

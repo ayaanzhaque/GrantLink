@@ -18,7 +18,29 @@ class DonationsViewController: UIViewController, UITableViewDelegate {
     
     }
     
- 
+    @IBAction func testNotifications(_ sender: Any) {
+        createNotification(title: "testTitle", body: "testBody", timer: 5)
+    }
+    
+    func createNotification(title: String, body: String, timer: Int) {
+        
+        let center = UNUserNotificationCenter.current()
+        let content = UNMutableNotificationContent()
+        content.title = title
+        content.body = body
+        content.sound = .default
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(timer), repeats: false)
+        
+        let request = UNNotificationRequest(identifier: "title", content: content, trigger: trigger)
+        
+        center.add(request) { (error) in
+            if error != nil {
+                print("Error = \(error?.localizedDescription ?? "error local notification")")
+            }
+            
+        }
+    }
     
     var data = ["user1                                      REPORT SUBMITTED", "user2                                     REPORT SUBMITTED", "user3                                     REPORT SUBMITTED", "user4                              PLEASE SUBMIT REPORT"]
 
