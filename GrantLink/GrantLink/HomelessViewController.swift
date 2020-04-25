@@ -103,16 +103,14 @@ class HomelessViewController: UIViewController {
         self.present(vc, animated: true)
         
     }
-    @IBAction func pendingPaymentsPressed(_ sender: Any) {
-    }
-    @IBAction func accountPressed(_ sender: Any) {
+    
+    @IBAction func transactionsPressed(_ sender: Any) {
         
-        let vc = self.storyboard?.instantiateViewController(identifier: "account" ) as! AccountViewController
+        let vc = self.storyboard?.instantiateViewController(identifier: "donations" ) as! DonationsViewController
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)
         
     }
-   
     
     /*
     // MARK: - Navigation

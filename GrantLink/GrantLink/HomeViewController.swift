@@ -77,12 +77,7 @@ class HomeViewController: UIViewController {
            vc.modalPresentationStyle = .fullScreen
            self.present(vc, animated: true)    }
     
-    @IBAction func viewPaymentsPressed(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(identifier: "payment" ) as! PaymentTableViewController
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: true)
-
-    }
+    
     
     @IBAction func sendReportPressed(_ sender: Any) {
         

@@ -706,33 +706,45 @@
             </objects>
             <point key="canvasLocation" x="1618.840579710145" y="267.85714285714283"/>
         </scene>
-        <!--Payment Table View Controller-->
-        <scene sceneID="vHE-iF-Ji2">
+        <!--Donations View Controller-->
+        <scene sceneID="DL1-MZ-kqt">
             <objects>
-                <tableViewController storyboardIdentifier="payment" id="y9r-1f-3Gm" customClass="PaymentTableViewController" customModule="GrantLink" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="90V-FK-rDb">
+                <viewController storyboardIdentifier="donations" id="Twr-Xs-YUS" customClass="DonationsViewController" customModule="GrantLink" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kDM-uI-Z7O">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="U9V-h3-Kyu">
+                                <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="homelessCell" id="fJb-qe-4PO">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fJb-qe-4PO" id="UUE-i0-7PB">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="jca-Ta-Dvc">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jca-Ta-Dvc" id="fJE-1g-7G8">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="y9r-1f-3Gm" id="WK1-dt-MXq"/>
-                            <outlet property="delegate" destination="y9r-1f-3Gm" id="15M-xr-vF7"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pH9-Wt-Wiz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstItem="U9V-h3-Kyu" firstAttribute="top" secondItem="wJ8-Sv-cdr" secondAttribute="top" constant="50" id="SCr-Cs-AkO"/>
+                            <constraint firstItem="U9V-h3-Kyu" firstAttribute="leading" secondItem="wJ8-Sv-cdr" secondAttribute="leading" id="eJ6-TT-ZRc"/>
+                            <constraint firstItem="wJ8-Sv-cdr" firstAttribute="trailing" secondItem="U9V-h3-Kyu" secondAttribute="trailing" id="uCG-qQ-qjO"/>
+                            <constraint firstItem="wJ8-Sv-cdr" firstAttribute="bottom" secondItem="U9V-h3-Kyu" secondAttribute="bottom" id="xs2-W6-FTB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wJ8-Sv-cdr"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="U9V-h3-Kyu" id="hhc-N1-VIo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H25-jF-ouk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2609" y="-257"/>
+            <point key="canvasLocation" x="2619" y="-419"/>
         </scene>
         <!--Donate View Controller-->
         <scene sceneID="SG7-gt-j6p">
@@ -775,14 +787,20 @@
                                     <constraint firstAttribute="height" constant="128" id="jGf-I1-ur0"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, needs money to buy a meal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Y1-s2-by6">
-                                <rect key="frame" x="56.5" y="320" width="301" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ayaan Haque" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beu-SK-gwm">
+                                <rect key="frame" x="102" y="263" width="210" height="42"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello, needs money to buy a meal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Y1-s2-by6">
+                                <rect key="frame" x="57" y="342" width="301" height="24"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="198-LI-96l">
-                                <rect key="frame" x="158.5" y="394" width="97" height="50"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="198-LI-96l">
+                                <rect key="frame" x="159" y="414" width="97" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="NFf-Qu-bch"/>
                                     <constraint firstAttribute="width" constant="97" id="WRn-cs-J5r"/>
@@ -802,10 +820,18 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ayaan Haque" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beu-SK-gwm">
-                                <rect key="frame" x="102" y="263" width="210" height="42"/>
-                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="36"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72c-Kq-OIh">
+                                <rect key="frame" x="195" y="313" width="25" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How much would you like to donate?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLi-6b-85U">
+                                <rect key="frame" x="67" y="385" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -1051,8 +1077,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="pendingPaymentsPressed:" destination="Vgh-f7-i82" eventType="touchUpInside" id="Pbn-el-tkS"/>
-                                    <action selector="viewPaymentsPressed:" destination="Vgh-f7-i82" eventType="touchUpInside" id="Xen-JN-SrM"/>
+                                    <action selector="transactionsPressed:" destination="Vgh-f7-i82" eventType="touchUpInside" id="CKB-Nc-X8E"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqO-cw-cfB">
@@ -1154,11 +1179,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8PE-5i-vin" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1618.840579710145" y="-419.19642857142856"/>
+            <point key="canvasLocation" x="1654" y="-419"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="afc-mj-LqS"/>
+        <segue reference="DhN-wU-BX3"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.54374402759999996" green="0.69964039330000005" blue="0.80785918239999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>
