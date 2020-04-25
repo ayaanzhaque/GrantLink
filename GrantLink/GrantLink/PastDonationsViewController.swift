@@ -22,6 +22,13 @@ class PastDonationsViewController: UIViewController {
 
     }
 
+    @IBAction func backPressed(_ sender: Any) {
+        
+        let vc = self.storyboard?.instantiateViewController(identifier: "donor" ) as! DonorViewController
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
+        
+    }
 }
 
 extension PastDonationsViewController: UITableViewDelegate {
