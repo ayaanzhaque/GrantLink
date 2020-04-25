@@ -17,6 +17,13 @@ class DonorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let annotation = MKPointAnnotation()
+        let centerCoordinate = CLLocationCoordinate2D(latitude: Double(mapViewController.userLocation.location?.coordinate.latitude ?? 0), longitude:Double(mapViewController.userLocation.location?.coordinate.longitude ?? 0))
+        annotation.coordinate = centerCoordinate
+        annotation.title = "Ayaan Haque"
+        annotation.subtitle = "Hello, needs money to buy a meal"
+        mapViewController.addAnnotation(annotation)
+        
         checkLocationServices()
         }
         func checkLocationServices() {
@@ -42,14 +49,7 @@ class DonorViewController: UIViewController {
           case .authorizedAlways:
            break
             };
-            
-            
-        let annotation = MKPointAnnotation()
-        let centerCoordinate = CLLocationCoordinate2D(latitude: Double(mapViewController.userLocation.location?.coordinate.latitude ?? 0), longitude:Double(mapViewController.userLocation.location?.coordinate.longitude ?? 0))
-        annotation.coordinate = centerCoordinate
-        annotation.title = "Ayaan Haque"
-        annotation.subtitle = "Hello, needs money to buy a meal"
-        mapViewController.addAnnotation(annotation)
+
 
 
 

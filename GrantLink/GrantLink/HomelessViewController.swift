@@ -43,6 +43,9 @@ class HomelessViewController: UIViewController {
           case .authorizedAlways:
            break
           }
+            
+        
+            
 
     }
     
@@ -55,6 +58,7 @@ class HomelessViewController: UIViewController {
         mapViewController.addAnnotation(annotation)
         
     }
+    
     
     @IBAction func sendReportPressed(_ sender: Any) {
         
@@ -72,6 +76,8 @@ class HomelessViewController: UIViewController {
         self.present(vc, animated: true)
         
     }
+   
+    
     /*
     // MARK: - Navigation
 
