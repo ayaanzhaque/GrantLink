@@ -515,7 +515,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Ehd-Ba-gfT"/>
                     <connections>
-                        <outlet property="mapViewController" destination="Zhu-mU-sWA" id="38D-99-m2Y"/>
+                        <outlet property="mapViewController" destination="Zhu-mU-sWA" id="hbb-4P-WrN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="auz-B7-leJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
