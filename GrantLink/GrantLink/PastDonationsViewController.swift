@@ -12,7 +12,7 @@ class PastDonationsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var data = ["Adithya                                      Received", "Sajiv                                     Received", "Vignav                                     Received", "Ayaan                              Pending"]
+    var data = ["Adithya                                                     Submitted", "Sajiv                                                          Submitted", "Vignav                                                       Submitted", "Ayaan                                                            Pending"]
     override func viewDidLoad() {
         super.viewDidLoad()
         

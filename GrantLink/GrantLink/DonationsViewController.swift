@@ -42,7 +42,7 @@ class DonationsViewController: UIViewController, UITableViewDelegate {
         }
     }
     
-    var data = ["John                                      Submitted", "Mark                                     Submitted", "Devontae                                     Submitted", "Viraaj                              Pending"]
+    var data = ["John                                                          Submitted", "Mark                                                          Submitted", "Devontae                                                  Submitted", "Viraaj                                                             Pending"]
 
     
     override func viewDidLoad() {
