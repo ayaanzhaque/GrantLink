@@ -751,12 +751,39 @@
                                 <connections>
                                     <action selector="backPressed:" destination="NeC-bI-tgs" eventType="touchUpInside" id="5bG-N8-P23"/>
                                     <action selector="backPressed:" destination="GHt-Oy-dTv" eventType="touchUpInside" id="Mf2-Jd-2IY"/>
-                                    <action selector="backPressed:" destination="Twr-Xs-YUS" eventType="touchUpInside" id="Q99-QF-hJg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxu-Gz-913">
+                                <rect key="frame" x="334" y="56" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="E6p-iD-mDI"/>
+                                    <constraint firstAttribute="width" constant="60" id="YuY-Vi-0m0"/>
+                                </constraints>
+                                <state key="normal" title="Report">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backPressed:" destination="NeC-bI-tgs" eventType="touchUpInside" id="JkT-XR-hPP"/>
+                                    <action selector="backPressed:" destination="GHt-Oy-dTv" eventType="touchUpInside" id="nr7-pR-nxv"/>
+                                    <segue destination="K1D-uo-AFD" kind="show" id="BI2-WE-ZRZ"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.54901960780000003" green="0.73725490199999999" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="qxu-Gz-913" firstAttribute="trailing" secondItem="kDM-uI-Z7O" secondAttribute="trailingMargin" id="0Hy-z7-jFx"/>
+                            <constraint firstItem="qxu-Gz-913" firstAttribute="baseline" secondItem="gNC-4P-Krt" secondAttribute="baseline" id="NJt-1t-teN"/>
                             <constraint firstItem="U9V-h3-Kyu" firstAttribute="top" secondItem="wJ8-Sv-cdr" secondAttribute="top" constant="50" id="SCr-Cs-AkO"/>
                             <constraint firstItem="U9V-h3-Kyu" firstAttribute="leading" secondItem="wJ8-Sv-cdr" secondAttribute="leading" id="eJ6-TT-ZRc"/>
                             <constraint firstItem="gNC-4P-Krt" firstAttribute="top" secondItem="wJ8-Sv-cdr" secondAttribute="top" constant="12" id="tQU-LD-9yr"/>
@@ -882,7 +909,7 @@
             <objects>
                 <viewController storyboardIdentifier="report" id="K1D-uo-AFD" customClass="ReportViewController" customModule="GrantLink" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Ro-sF-BqO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2H-Qy-b08">
@@ -893,8 +920,8 @@
                                     <action selector="submitPressed:" destination="K1D-uo-AFD" eventType="touchUpInside" id="18C-o9-fHC"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Receiver" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cxx-KE-aDc">
-                                <rect key="frame" x="159" y="105" width="97" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Viraaj Reddi" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cxx-KE-aDc">
+                                <rect key="frame" x="159" y="105" width="105" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -906,15 +933,11 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Note" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gCJ-Zg-WI4">
-                                <rect key="frame" x="159" y="285" width="97" height="34"/>
+                                <rect key="frame" x="159" y="315" width="97" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zt8-Q8-dsc">
-                                <rect key="frame" x="87" y="372" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Amount" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lBk-1T-lxN">
                                 <rect key="frame" x="159" y="231" width="97" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -922,7 +945,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjq-8a-O6r">
-                                <rect key="frame" x="169" y="565" width="76" height="30"/>
+                                <rect key="frame" x="169" y="735" width="76" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Take Photo"/>
                                 <connections>
@@ -930,7 +953,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckf-zU-fha">
-                                <rect key="frame" x="183" y="637" width="49" height="30"/>
+                                <rect key="frame" x="183" y="793" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Upload"/>
                                 <connections>
@@ -945,10 +968,15 @@
                                     <action selector="backPressed:" destination="K1D-uo-AFD" eventType="touchUpInside" id="dh3-OH-ctB"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zt8-Q8-dsc">
+                                <rect key="frame" x="91" y="444" width="240" height="249"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Bpv-yz-tgk"/>
                     </view>
+                    <navigationItem key="navigationItem" id="K2f-la-2hp"/>
                     <connections>
                         <outlet property="amount" destination="lBk-1T-lxN" id="5nk-Pe-ZOP"/>
                         <outlet property="imageView" destination="Zt8-Q8-dsc" id="SeE-8h-z9K"/>
@@ -959,7 +987,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fsu-XC-qLL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3052" y="-820"/>
+            <point key="canvasLocation" x="3050.7246376811595" y="-820.3125"/>
         </scene>
         <!--Type View Controller-->
         <scene sceneID="TLX-U9-6Ww">

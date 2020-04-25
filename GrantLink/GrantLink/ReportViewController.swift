@@ -37,7 +37,7 @@ class ReportViewController: UIViewController,UIImagePickerControllerDelegate, UI
     }
     
     @IBAction func backPressed(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(identifier: "home" ) as! HomeViewController
+        let vc = self.storyboard?.instantiateViewController(identifier: "homeless" ) as! HomelessViewController
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)
     }
