@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		657B6994245018EF00B3D58A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 657B6993245018EF00B3D58A /* GoogleService-Info.plist */; };
 		8139B0F2245004E9000BC6AE /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8139B0F1245004E9000BC6AE /* UIView+Extensions.swift */; };
+		C92305A42453F163002E52BA /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92305A32453F163002E52BA /* DonateViewController.swift */; };
 		C92F5CB6245244F000485BC8 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92F5CB5245244F000485BC8 /* AccountViewController.swift */; };
 		C965DD732451630B00FCCE99 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965DD722451630B00FCCE99 /* ReportViewController.swift */; };
 		C971F1C4244EC201003F6934 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C971F1C3244EC201003F6934 /* AppDelegate.swift */; };
@@ -30,6 +31,7 @@
 		657B6993245018EF00B3D58A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		657B69952450192B00B3D58A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8139B0F1245004E9000BC6AE /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		C92305A32453F163002E52BA /* DonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
 		C92F5CB5245244F000485BC8 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		C93BECBEE58A1F8F599EB2CC /* Pods-GrantLink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrantLink.release.xcconfig"; path = "Target Support Files/Pods-GrantLink/Pods-GrantLink.release.xcconfig"; sourceTree = "<group>"; };
 		C965DD722451630B00FCCE99 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				C9D8CCC924515E2100DA76B5 /* PaymentTableViewController.swift */,
 				C965DD722451630B00FCCE99 /* ReportViewController.swift */,
 				C92F5CB5245244F000485BC8 /* AccountViewController.swift */,
+				C92305A32453F163002E52BA /* DonateViewController.swift */,
 			);
 			path = GrantLink;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				C965DD732451630B00FCCE99 /* ReportViewController.swift in Sources */,
 				C92F5CB6245244F000485BC8 /* AccountViewController.swift in Sources */,
 				C997E0E5244FA87400F11466 /* StartViewController.swift in Sources */,
+				C92305A42453F163002E52BA /* DonateViewController.swift in Sources */,
 				C997E0E9244FA8EB00F11466 /* SignUpViewController.swift in Sources */,
 				C997E0EB244FA8F600F11466 /* HomeViewController.swift in Sources */,
 			);
