@@ -1,5 +1,5 @@
 //
-//  HomelessViewController.swift
+//  donorTableViewController.swift
 //  GrantLink
 //
 //  Created by Viraaj Reddi on 4/25/20.
@@ -8,21 +8,19 @@
 
 import UIKit
 
-class HomelessViewController: UIViewController, UITableViewDelegate {
+class donorTableViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-          print("you tapped me!")
-      }
+     let data = ["user1", "user2", "user3", "user4"]
     
-    let data = ["user1                                      REPORT SUBMITTED", "user2                                     REPORT SUBMITTED", "user3                                     REPORT SUBMITTED", "user4                              PLEASE SUBMIT REPORT"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         tableView.delegate = self
         tableView.dataSource = self
+        
+        
         // Do any additional setup after loading the view.
     }
     
@@ -39,15 +37,21 @@ class HomelessViewController: UIViewController, UITableViewDelegate {
 
 }
 
+extension donorTableViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("you tapped me!")
+    }
+}
 
-extension HomelessViewController: UITableViewDataSource {
+extension donorTableViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "homelessCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "donorCell", for: indexPath)
         
         cell.textLabel?.text = data[indexPath.row]
      
@@ -58,4 +62,3 @@ extension HomelessViewController: UITableViewDataSource {
     }
     
 }
-
