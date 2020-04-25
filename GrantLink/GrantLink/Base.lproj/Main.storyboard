@@ -603,7 +603,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="viewPaymentsPressed:" destination="HmM-Fi-xzn" eventType="touchUpInside" id="EkC-Ad-6uM"/>
+                                    <action selector="transactionsPressed:" destination="HmM-Fi-xzn" eventType="touchUpInside" id="uCA-cR-VMP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gg-k8-wuP">
@@ -744,7 +744,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H25-jF-ouk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2619" y="-419"/>
+            <point key="canvasLocation" x="2317" y="-820"/>
         </scene>
         <!--Donate View Controller-->
         <scene sceneID="SG7-gt-j6p">
@@ -941,7 +941,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fsu-XC-qLL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2584" y="429"/>
+            <point key="canvasLocation" x="3052" y="-820"/>
         </scene>
         <!--Type View Controller-->
         <scene sceneID="TLX-U9-6Ww">
@@ -1181,9 +1181,49 @@
             </objects>
             <point key="canvasLocation" x="1654" y="-419"/>
         </scene>
+        <!--Past Donations View Controller-->
+        <scene sceneID="LyD-je-2Pj">
+            <objects>
+                <viewController storyboardIdentifier="pastDonations" id="NeC-bI-tgs" customClass="PastDonationsViewController" customModule="GrantLink" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cs2-7V-sD9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zUQ-bC-adJ">
+                                <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="donorCell" id="mRw-hs-wwn">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mRw-hs-wwn" id="jXy-te-hd9">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zUQ-bC-adJ" firstAttribute="top" secondItem="wxQ-uT-KIB" secondAttribute="top" constant="50" id="6UU-OY-tAR"/>
+                            <constraint firstItem="wxQ-uT-KIB" firstAttribute="bottom" secondItem="zUQ-bC-adJ" secondAttribute="bottom" id="K0m-4u-VpA"/>
+                            <constraint firstItem="wxQ-uT-KIB" firstAttribute="trailing" secondItem="zUQ-bC-adJ" secondAttribute="trailing" id="LdR-Ct-Q7s"/>
+                            <constraint firstItem="zUQ-bC-adJ" firstAttribute="leading" secondItem="wxQ-uT-KIB" secondAttribute="leading" id="Qlb-8b-wej"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wxQ-uT-KIB"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="zUQ-bC-adJ" id="F7Q-gW-4jY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nZI-qO-hcS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2459" y="268"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="DhN-wU-BX3"/>
+        <segue reference="afc-mj-LqS"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.54374402759999996" green="0.69964039330000005" blue="0.80785918239999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>

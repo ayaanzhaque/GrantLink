@@ -92,6 +92,13 @@ class DonorViewController: UIViewController {
         
     }
 
+    @IBAction func transactionsPressed(_ sender: Any) {
+        
+        let vc = self.storyboard?.instantiateViewController(identifier: "pastDonations" ) as! PastDonationsViewController
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
+        
+    }
     
     @IBAction func donatePressed(_ sender: Any) {
     }
