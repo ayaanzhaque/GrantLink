@@ -40,7 +40,7 @@ class DonateViewController: UIViewController {
          alertController.addAction(defaultAction)
          self.present(alertController, animated: true, completion: nil)
         
-        let vc = storyboard?.instantiateViewController(identifier: "home" ) as! HomeViewController
+        let vc = storyboard?.instantiateViewController(identifier: "donor" ) as! DonorViewController
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true)
         
