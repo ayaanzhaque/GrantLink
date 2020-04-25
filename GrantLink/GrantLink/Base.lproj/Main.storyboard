@@ -187,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+            <point key="canvasLocation" x="-497" y="139"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="epM-oc-M6Y">
@@ -462,7 +462,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1h8-X2-fJG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1345" y="-510"/>
+            <point key="canvasLocation" x="780" y="-589"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="In8-ox-fSr">
@@ -518,7 +518,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Set Location"/>
                                 <connections>
-                                    <action selector="addLocationToFirebase:" destination="HmM-Fi-xzn" eventType="touchUpInside" id="Lb2-Za-7he"/>
+                                    <action selector="setLocationPressed:" destination="HmM-Fi-xzn" eventType="touchUpInside" id="UeG-db-tJu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRp-0P-nKQ">
@@ -568,7 +568,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pH9-Wt-Wiz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2201" y="6"/>
+            <point key="canvasLocation" x="2609" y="-257"/>
         </scene>
         <!--Report View Controller-->
         <scene sceneID="Ba9-di-OcO">
@@ -652,7 +652,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fsu-XC-qLL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2182.608695652174" y="656.91964285714278"/>
+            <point key="canvasLocation" x="2584" y="429"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.54374402759999996" green="0.69964039330000005" blue="0.80785918239999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

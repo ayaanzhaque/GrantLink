@@ -4,8 +4,6 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>If tihs doesn&apos;t work ima kashoot this app</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -26,6 +24,8 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>Your photo will be sent to your donator</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>If tihs doesn't work ima kashoot this app</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
