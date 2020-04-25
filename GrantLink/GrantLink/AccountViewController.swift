@@ -19,8 +19,27 @@ class AccountViewController: UIViewController {
     @IBOutlet weak var expirDate: UITextField!
     @IBOutlet weak var cvv: UITextField!
     
+    @objc func doneClicked() {
+        view.endEditing(true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        configureTextFields()
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+               
+        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: #selector(self.doneClicked))
+        toolbar.setItems([doneButton], animated: false)
+
+
+        name.inputAccessoryView = toolbar
+        bio.inputAccessoryView = toolbar
+        cardNum.inputAccessoryView = toolbar
+        expirDate.inputAccessoryView = toolbar
+        cvv.inputAccessoryView = toolbar
+
 
         // Do any additional setup after loading the view.
     }
@@ -58,14 +77,31 @@ class AccountViewController: UIViewController {
     }
     
     
-    /*
-    // MARK: - Navigation
+private func configureTapGesture(){
+              let tapGesture = UITapGestureRecognizer(target: self, action: #selector(AccountViewController.handleTap))
+              view.addGestureRecognizer(tapGesture)
+          }
+          
+          @objc func handleTap(){
+              view.endEditing(true)
+          }
+          
+          private func configureTextFields(){
+            name.delegate = self
+            bio.delegate = self
+            cardNum.delegate = self
+            expirDate.delegate = self
+            cvv.delegate = self
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+          }
+          
+      }
+
+extension AccountViewController: UITextFieldDelegate {
+  
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+      textField.resignFirstResponder()
+      return true
+  }
 
 }

@@ -43,12 +43,22 @@ class DonorViewController: UIViewController {
           case .authorizedAlways:
            break
             };
+            
+        if let userLocation = locationManager.location?.coordinate {
+            let viewRegion = MKCoordinateRegion(center: userLocation, latitudinalMeters: 750, longitudinalMeters: 750)
+            mapViewController.setRegion(viewRegion, animated: false)
+        }
 
 
 
 
     }
     
+    @IBAction func settingsPressed(_ sender: Any) {
+        
+        
+        
+    }
     
     @IBAction func showUsersPressed(_ sender: Any) {
         
@@ -81,11 +91,7 @@ class DonorViewController: UIViewController {
         mapViewController.addAnnotation(annotation4)
         
     }
-    @IBAction func accountPressed(_ sender: Any) {
-        
-        
-        
-    }
+
     
     @IBAction func donatePressed(_ sender: Any) {
     }

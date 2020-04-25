@@ -10,10 +10,25 @@ import UIKit
 
 class DonateViewController: UIViewController {
 
+    @IBOutlet weak var money: UITextField!
+    
+    @objc func doneClicked() {
+        view.endEditing(true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        configureTextFields()
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+               
+        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: #selector(self.doneClicked))
+        toolbar.setItems([doneButton], animated: false)
 
-        // Do any additional setup after loading the view.
+
+        money.inputAccessoryView = toolbar
+        
     }
     
 
@@ -30,14 +45,27 @@ class DonateViewController: UIViewController {
         present(vc, animated: true)
         
     }
-    /*
-    // MARK: - Navigation
+    
+private func configureTapGesture(){
+              let tapGesture = UITapGestureRecognizer(target: self, action: #selector(DonateViewController.handleTap))
+              view.addGestureRecognizer(tapGesture)
+          }
+          
+          @objc func handleTap(){
+              view.endEditing(true)
+          }
+          
+          private func configureTextFields(){
+            money.delegate = self
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+          }
+          
+      }
 
+extension DonateViewController: UITextFieldDelegate {
+  
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+      textField.resignFirstResponder()
+      return true
+}
 }

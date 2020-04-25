@@ -43,34 +43,46 @@ class HomelessViewController: UIViewController {
           case .authorizedAlways:
            break
           }
+        
+        if let userLocation = locationManager.location?.coordinate {
+            let viewRegion = MKCoordinateRegion(center: userLocation, latitudinalMeters: 750, longitudinalMeters: 750)
+            mapViewController.setRegion(viewRegion, animated: false)
+        }
             
         
             
 
     }
     
+    @IBAction func settingsPressed(_ sender: Any) {
+        
+        
+
+        
+    }
+    
     @IBAction func showUsersPressed(_ sender: Any) {
         
-        let annotation = MKPointAnnotation()
-        let centerCoordinate = CLLocationCoordinate2D(latitude: 37.257468, longitude:-122.030720)
-        annotation.coordinate = centerCoordinate
-        annotation.title = "Sajiv Shah"
-        annotation.subtitle = "Hi! Would really appreciate a donation"
-        mapViewController.addAnnotation(annotation)
-        
         let annotation2 = MKPointAnnotation()
-        let centerCoordinate2 = CLLocationCoordinate2D(latitude: 37.256802, longitude:-122.029400)
+        let centerCoordinate2 = CLLocationCoordinate2D(latitude: 37.257468, longitude:-122.030720)
         annotation2.coordinate = centerCoordinate2
-        annotation2.title = "Adithya Peruvemba"
-        annotation2.subtitle = "Hi! My family really needs money to eat."
+        annotation2.title = "Sajiv Shah"
+        annotation2.subtitle = "Hi! Would really appreciate a donation"
         mapViewController.addAnnotation(annotation2)
-        
+
         let annotation3 = MKPointAnnotation()
-        let centerCoordinate3 = CLLocationCoordinate2D(latitude: 37.254599, longitude:-122.026535)
+        let centerCoordinate3 = CLLocationCoordinate2D(latitude: 37.256802, longitude:-122.029400)
         annotation3.coordinate = centerCoordinate3
-        annotation3.title = "Vignav Ramesh"
-        annotation3.subtitle = "Hello! I want to save for a car!"
+        annotation3.title = "Adithya Peruvemba"
+        annotation3.subtitle = "Hi! My family really needs money to eat."
         mapViewController.addAnnotation(annotation3)
+
+        let annotation4 = MKPointAnnotation()
+        let centerCoordinate4 = CLLocationCoordinate2D(latitude: 37.254599, longitude:-122.026535)
+        annotation4.coordinate = centerCoordinate4
+        annotation4.title = "Vignav Ramesh"
+        annotation4.subtitle = "Hello! I want to save for a car!"
+        mapViewController.addAnnotation(annotation4)
         
     }
     @IBAction func setLocationPressed(_ sender: Any) {
