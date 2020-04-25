@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>225751274382-0bj1f6jeqljul0akbfu481d6oo1qhr3f.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.225751274382-0bj1f6jeqljul0akbfu481d6oo1qhr3f</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCGk2-nnizAB-FpDNsHJH-1S923bpOEXNc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>225751274382</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ayaanhaque.GrantLink</string>
+	<key>PROJECT_ID</key>
+	<string>grantlink-f2c15</string>
+	<key>STORAGE_BUCKET</key>
+	<string>grantlink-f2c15.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:225751274382:ios:ca3aab72997644bc300adf</string>
+	<key>DATABASE_URL</key>
+	<string>https://grantlink-f2c15.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		657B6994245018EF00B3D58A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 657B6993245018EF00B3D58A /* GoogleService-Info.plist */; };
+		8139B0F2245004E9000BC6AE /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8139B0F1245004E9000BC6AE /* UIView+Extensions.swift */; };
+		C92F5CB6245244F000485BC8 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92F5CB5245244F000485BC8 /* AccountViewController.swift */; };
+		C965DD732451630B00FCCE99 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965DD722451630B00FCCE99 /* ReportViewController.swift */; };
+		C971F1C4244EC201003F6934 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C971F1C3244EC201003F6934 /* AppDelegate.swift */; };
+		C971F1C6244EC201003F6934 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C971F1C5244EC201003F6934 /* SceneDelegate.swift */; };
+		C971F1CB244EC201003F6934 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C971F1C9244EC201003F6934 /* Main.storyboard */; };
+		C971F1CD244EC204003F6934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C971F1CC244EC204003F6934 /* Assets.xcassets */; };
+		C971F1D0244EC204003F6934 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C971F1CE244EC204003F6934 /* LaunchScreen.storyboard */; };
+		C997E0E5244FA87400F11466 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C997E0E4244FA87400F11466 /* StartViewController.swift */; };
+		C997E0E9244FA8EB00F11466 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C997E0E8244FA8EB00F11466 /* SignUpViewController.swift */; };
+		C997E0EB244FA8F600F11466 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C997E0EA244FA8F600F11466 /* HomeViewController.swift */; };
+		C9D8CCCA24515E2100DA76B5 /* PaymentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D8CCC924515E2100DA76B5 /* PaymentTableViewController.swift */; };
+		C9E588352450278900CC1441 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E588342450278900CC1441 /* LoginViewController.swift */; };
+		E3712DD97D2D1AF9441C20DF /* Pods_GrantLink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D435A93D564283784FC405 /* Pods_GrantLink.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		16C349327C483ABAABEED60A /* Pods-GrantLink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrantLink.debug.xcconfig"; path = "Target Support Files/Pods-GrantLink/Pods-GrantLink.debug.xcconfig"; sourceTree = "<group>"; };
+		44D435A93D564283784FC405 /* Pods_GrantLink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrantLink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		657B6993245018EF00B3D58A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		657B69952450192B00B3D58A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8139B0F1245004E9000BC6AE /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		C92F5CB5245244F000485BC8 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		C93BECBEE58A1F8F599EB2CC /* Pods-GrantLink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrantLink.release.xcconfig"; path = "Target Support Files/Pods-GrantLink/Pods-GrantLink.release.xcconfig"; sourceTree = "<group>"; };
+		C965DD722451630B00FCCE99 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		C971F1C0244EC201003F6934 /* GrantLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrantLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C971F1C3244EC201003F6934 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C971F1C5244EC201003F6934 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C971F1CA244EC201003F6934 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C971F1CC244EC204003F6934 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C971F1CF244EC204003F6934 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C997E0E4244FA87400F11466 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		C997E0E8244FA8EB00F11466 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C997E0EA244FA8F600F11466 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C9D8CCC924515E2100DA76B5 /* PaymentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTableViewController.swift; sourceTree = "<group>"; };
+		C9E588342450278900CC1441 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C9FEC8FE244FB43400145561 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C971F1BD244EC201003F6934 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3712DD97D2D1AF9441C20DF /* Pods_GrantLink.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8139B0F0245004C4000BC6AE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8139B0F1245004E9000BC6AE /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A8400C8AAF3A2C5A3D6C8B49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9FEC8FE244FB43400145561 /* FirebaseCore.framework */,
+				44D435A93D564283784FC405 /* Pods_GrantLink.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C971F1B7244EC201003F6934 = {
+			isa = PBXGroup;
+			children = (
+				C971F1C2244EC201003F6934 /* GrantLink */,
+				C971F1C1244EC201003F6934 /* Products */,
+				E25C531BA890A91FD0AC602C /* Pods */,
+				A8400C8AAF3A2C5A3D6C8B49 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C971F1C1244EC201003F6934 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C971F1C0244EC201003F6934 /* GrantLink.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C971F1C2244EC201003F6934 /* GrantLink */ = {
+			isa = PBXGroup;
+			children = (
+				8139B0F0245004C4000BC6AE /* Extensions */,
+				C971F1C3244EC201003F6934 /* AppDelegate.swift */,
+				C971F1C5244EC201003F6934 /* SceneDelegate.swift */,
+				C971F1C9244EC201003F6934 /* Main.storyboard */,
+				C971F1CC244EC204003F6934 /* Assets.xcassets */,
+				657B69952450192B00B3D58A /* Info.plist */,
+				C971F1CE244EC204003F6934 /* LaunchScreen.storyboard */,
+				C997E0E4244FA87400F11466 /* StartViewController.swift */,
+				C997E0E8244FA8EB00F11466 /* SignUpViewController.swift */,
+				C997E0EA244FA8F600F11466 /* HomeViewController.swift */,
+				657B6993245018EF00B3D58A /* GoogleService-Info.plist */,
+				C9E588342450278900CC1441 /* LoginViewController.swift */,
+				C9D8CCC924515E2100DA76B5 /* PaymentTableViewController.swift */,
+				C965DD722451630B00FCCE99 /* ReportViewController.swift */,
+				C92F5CB5245244F000485BC8 /* AccountViewController.swift */,
+			);
+			path = GrantLink;
+			sourceTree = "<group>";
+		};
+		E25C531BA890A91FD0AC602C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16C349327C483ABAABEED60A /* Pods-GrantLink.debug.xcconfig */,
+				C93BECBEE58A1F8F599EB2CC /* Pods-GrantLink.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C971F1BF244EC201003F6934 /* GrantLink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C971F1D4244EC204003F6934 /* Build configuration list for PBXNativeTarget "GrantLink" */;
+			buildPhases = (
+				44A0B1620F1D8C0B3FAFF073 /* [CP] Check Pods Manifest.lock */,
+				C971F1BC244EC201003F6934 /* Sources */,
+				C971F1BD244EC201003F6934 /* Frameworks */,
+				C971F1BE244EC201003F6934 /* Resources */,
+				604BB55B8B15685A73723399 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrantLink;
+			productName = GrantLink;
+			productReference = C971F1C0244EC201003F6934 /* GrantLink.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C971F1B8244EC201003F6934 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Ayaan Haque";
+				TargetAttributes = {
+					C971F1BF244EC201003F6934 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = C971F1BB244EC201003F6934 /* Build configuration list for PBXProject "GrantLink" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C971F1B7244EC201003F6934;
+			productRefGroup = C971F1C1244EC201003F6934 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C971F1BF244EC201003F6934 /* GrantLink */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C971F1BE244EC201003F6934 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C971F1D0244EC204003F6934 /* LaunchScreen.storyboard in Resources */,
+				657B6994245018EF00B3D58A /* GoogleService-Info.plist in Resources */,
+				C971F1CD244EC204003F6934 /* Assets.xcassets in Resources */,
+				C971F1CB244EC201003F6934 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44A0B1620F1D8C0B3FAFF073 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GrantLink-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		604BB55B8B15685A73723399 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrantLink/Pods-GrantLink-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrantLink/Pods-GrantLink-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GrantLink/Pods-GrantLink-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C971F1BC244EC201003F6934 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9D8CCCA24515E2100DA76B5 /* PaymentTableViewController.swift in Sources */,
+				C9E588352450278900CC1441 /* LoginViewController.swift in Sources */,
+				8139B0F2245004E9000BC6AE /* UIView+Extensions.swift in Sources */,
+				C971F1C4244EC201003F6934 /* AppDelegate.swift in Sources */,
+				C971F1C6244EC201003F6934 /* SceneDelegate.swift in Sources */,
+				C965DD732451630B00FCCE99 /* ReportViewController.swift in Sources */,
+				C92F5CB6245244F000485BC8 /* AccountViewController.swift in Sources */,
+				C997E0E5244FA87400F11466 /* StartViewController.swift in Sources */,
+				C997E0E9244FA8EB00F11466 /* SignUpViewController.swift in Sources */,
+				C997E0EB244FA8F600F11466 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C971F1C9244EC201003F6934 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C971F1CA244EC201003F6934 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C971F1CE244EC204003F6934 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C971F1CF244EC204003F6934 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C971F1D2244EC204003F6934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C971F1D3244EC204003F6934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C971F1D5244EC204003F6934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16C349327C483ABAABEED60A /* Pods-GrantLink.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BN4WV26BSA;
+				INFOPLIST_FILE = GrantLink/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vishraj55.GrantLink;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C971F1D6244EC204003F6934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C93BECBEE58A1F8F599EB2CC /* Pods-GrantLink.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BN4WV26BSA;
+				INFOPLIST_FILE = GrantLink/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vishraj55.GrantLink;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C971F1BB244EC201003F6934 /* Build configuration list for PBXProject "GrantLink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C971F1D2244EC204003F6934 /* Debug */,
+				C971F1D3244EC204003F6934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C971F1D4244EC204003F6934 /* Build configuration list for PBXNativeTarget "GrantLink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C971F1D5244EC204003F6934 /* Debug */,
+				C971F1D6244EC204003F6934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C971F1B8244EC201003F6934 /* Project object */;
+}
