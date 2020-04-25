@@ -16,6 +16,7 @@ class ReportViewController: UIViewController,UIImagePickerControllerDelegate, UI
     @IBOutlet weak var note: UITextField!
     @IBOutlet weak var imageView: UIImageView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,10 +37,17 @@ class ReportViewController: UIViewController,UIImagePickerControllerDelegate, UI
         // Do any additional setup after loading the view.
     }
     
+    let changedText = "user4                                     REPORT SUBMITTED"
+    
     @IBAction func submitPressed(_ sender: Any) {
         
+        performSegue(withIdentifier: "submitIdentifier", sender: self)
         
-        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var vc = segue.destination as! DonationsViewController
+        vc.data[3] = self.changedText
     }
     
     @IBAction func backPressed(_ sender: Any) {

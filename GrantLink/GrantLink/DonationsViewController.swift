@@ -14,9 +14,13 @@ class DonationsViewController: UIViewController, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("you tapped me!")
+    
+    
     }
     
-    let data = ["user1                                      REPORT SUBMITTED", "user2                                     REPORT SUBMITTED", "user3                                     REPORT SUBMITTED", "user4                              PLEASE SUBMIT REPORT"]
+ 
+    
+    var data = ["user1                                      REPORT SUBMITTED", "user2                                     REPORT SUBMITTED", "user3                                     REPORT SUBMITTED", "user4                              PLEASE SUBMIT REPORT"]
 
     
     override func viewDidLoad() {
@@ -24,6 +28,7 @@ class DonationsViewController: UIViewController, UITableViewDelegate {
 
         tableView.delegate = self
         tableView.dataSource = self
+
         
     }
     
