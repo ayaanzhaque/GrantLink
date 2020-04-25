@@ -1126,6 +1126,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="setLocationPressed:" destination="Vgh-f7-i82" eventType="touchUpInside" id="wAs-mz-OgM"/>
+                                    <action selector="showUsersPressed:" destination="Vgh-f7-i82" eventType="touchUpInside" id="AFt-tM-I2g"/>
                                 </connections>
                             </button>
                         </subviews>

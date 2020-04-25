@@ -49,6 +49,30 @@ class HomelessViewController: UIViewController {
 
     }
     
+    @IBAction func showUsersPressed(_ sender: Any) {
+        
+        let annotation = MKPointAnnotation()
+        let centerCoordinate = CLLocationCoordinate2D(latitude: 37.257468, longitude:-122.030720)
+        annotation.coordinate = centerCoordinate
+        annotation.title = "Sajiv Shah"
+        annotation.subtitle = "Hi! Would really appreciate a donation"
+        mapViewController.addAnnotation(annotation)
+        
+        let annotation2 = MKPointAnnotation()
+        let centerCoordinate2 = CLLocationCoordinate2D(latitude: 37.256802, longitude:-122.029400)
+        annotation2.coordinate = centerCoordinate2
+        annotation2.title = "Adithya Peruvemba"
+        annotation2.subtitle = "Hi! My family really needs money to eat."
+        mapViewController.addAnnotation(annotation2)
+        
+        let annotation3 = MKPointAnnotation()
+        let centerCoordinate3 = CLLocationCoordinate2D(latitude: 37.254599, longitude:-122.026535)
+        annotation3.coordinate = centerCoordinate3
+        annotation3.title = "Vignav Ramesh"
+        annotation3.subtitle = "Hello! I want to save for a car!"
+        mapViewController.addAnnotation(annotation3)
+        
+    }
     @IBAction func setLocationPressed(_ sender: Any) {
         let annotation = MKPointAnnotation()
         let centerCoordinate = CLLocationCoordinate2D(latitude: Double(mapViewController.userLocation.location?.coordinate.latitude ?? 0), longitude:Double(mapViewController.userLocation.location?.coordinate.longitude ?? 0))
