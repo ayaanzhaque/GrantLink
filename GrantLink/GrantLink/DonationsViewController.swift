@@ -22,6 +22,7 @@ class DonationsViewController: UIViewController, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.register(UINib(nibName: "DonationsTableViewCell", bundle: Bundle(for: DonationsTableViewCell.self)), forCellReuseIdentifier: DonationsTableViewCell.identifier)
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -36,7 +37,17 @@ extension DonationsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "homelessCell", for: indexPath)
+        
+            let customCell = tableView.dequeueReusableCell(withIdentifier: DonationsTableViewCell.identifier, for: indexPath) as! DonationsTableViewCell
+            
+        
+     
+        
+            customCell.configure(with: "Custom Cell", imageName: "checkmark")
+            
+            return customCell
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: "donationsCell", for: indexPath)
         
         cell.textLabel?.text = data[indexPath.row]
      
