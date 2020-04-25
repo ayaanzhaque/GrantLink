@@ -809,7 +809,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbB-GB-bvl">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbB-GB-bvl">
                                 <rect key="frame" x="102" y="638" width="210" height="85"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -822,7 +822,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
+                                        <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
@@ -835,15 +835,28 @@
                                     <action selector="donatePressed:" destination="8YA-ah-48F" eventType="touchUpInside" id="ByI-9y-MfI"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ayaan Haque" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beu-SK-gwm">
-                                <rect key="frame" x="102" y="305" width="210" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="36"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pfp" translatesAutoresizingMaskIntoConstraints="NO" id="TlE-Pv-h7y">
+                                <rect key="frame" x="87" y="50" width="240" height="235"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Ayaan Haque" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beu-SK-gwm">
+                                <rect key="frame" x="86" y="305" width="243" height="50"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="198-LI-96l">
-                                <rect key="frame" x="159" y="546" width="97" height="41"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="198-LI-96l">
+                                <rect key="frame" x="147" y="559" width="120" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="NFf-Qu-bch"/>
                                     <constraint firstAttribute="width" constant="97" id="WRn-cs-J5r"/>
@@ -853,7 +866,7 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
+                                        <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
@@ -863,36 +876,76 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svj-sV-MYH">
-                                <rect key="frame" x="193" y="378" width="29" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Bio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svj-sV-MYH">
+                                <rect key="frame" x="169" y="363" width="76" height="39"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How much would you like to donate?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdQ-m4-qkz">
-                                <rect key="frame" x="42" y="514" width="331" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Hello, needs money to buy a meal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Y1-s2-by6">
+                                <rect key="frame" x="39" y="410" width="337" height="58"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello, needs money to buy a meal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Y1-s2-by6">
-                                <rect key="frame" x="57" y="410" width="301" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="How much would you like to donate?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdQ-m4-qkz">
+                                <rect key="frame" x="31" y="497" width="352" height="41"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="pfp" translatesAutoresizingMaskIntoConstraints="NO" id="TlE-Pv-h7y">
-                                <rect key="frame" x="87" y="51" width="240" height="212"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="E9a-1o-ZmG"/>
-                                    <constraint firstAttribute="height" constant="128" id="jGf-I1-ur0"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.55294117649999996" green="0.73333333329999995" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="198-LI-96l" firstAttribute="centerX" secondItem="svj-sV-MYH" secondAttribute="centerX" id="7N9-aK-aHJ"/>
+                            <constraint firstItem="DbB-GB-bvl" firstAttribute="leading" secondItem="qwy-rk-sYC" secondAttribute="leading" constant="102" id="8C6-2Z-Bzg"/>
+                            <constraint firstItem="198-LI-96l" firstAttribute="centerX" secondItem="cdQ-m4-qkz" secondAttribute="centerX" id="AaN-yr-NUZ"/>
+                            <constraint firstItem="TlE-Pv-h7y" firstAttribute="leading" secondItem="qwy-rk-sYC" secondAttribute="leading" constant="87" id="Cjf-5r-NYX"/>
+                            <constraint firstItem="DbB-GB-bvl" firstAttribute="top" secondItem="198-LI-96l" secondAttribute="bottom" constant="51" id="H5W-KW-8GR"/>
+                            <constraint firstItem="198-LI-96l" firstAttribute="top" secondItem="cdQ-m4-qkz" secondAttribute="bottom" constant="8" id="Hiu-EM-ZbN"/>
+                            <constraint firstItem="198-LI-96l" firstAttribute="centerX" secondItem="3Y1-s2-by6" secondAttribute="centerX" id="Rjy-WV-QNH"/>
+                            <constraint firstItem="qwy-rk-sYC" firstAttribute="bottom" secondItem="DbB-GB-bvl" secondAttribute="bottom" constant="85" id="RmU-PH-Zss"/>
+                            <constraint firstItem="TlE-Pv-h7y" firstAttribute="top" secondItem="qwy-rk-sYC" secondAttribute="top" constant="50" id="UKk-uA-TQP"/>
+                            <constraint firstItem="qwy-rk-sYC" firstAttribute="trailing" secondItem="TlE-Pv-h7y" secondAttribute="trailing" constant="87" id="UOb-5N-wL3"/>
+                            <constraint firstItem="svj-sV-MYH" firstAttribute="top" secondItem="beu-SK-gwm" secondAttribute="bottom" constant="31" id="UhA-tE-dVF"/>
+                            <constraint firstItem="qwy-rk-sYC" firstAttribute="trailing" secondItem="DbB-GB-bvl" secondAttribute="trailing" constant="102" id="aG9-lH-HeM"/>
+                            <constraint firstItem="198-LI-96l" firstAttribute="centerX" secondItem="beu-SK-gwm" secondAttribute="centerX" id="eFj-sR-wYk"/>
+                            <constraint firstItem="198-LI-96l" firstAttribute="centerX" secondItem="DbB-GB-bvl" secondAttribute="centerX" id="f7v-U2-6zg"/>
+                            <constraint firstItem="3Y1-s2-by6" firstAttribute="top" secondItem="svj-sV-MYH" secondAttribute="bottom" constant="8" id="gv8-35-PKo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qwy-rk-sYC"/>
                     </view>
                     <navigationItem key="navigationItem" id="71B-KG-psL"/>
