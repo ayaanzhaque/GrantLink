@@ -16,7 +16,15 @@ class ViewReportViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func backPressed(_ sender: Any) {
+        
+        let vc = self.storyboard?.instantiateViewController(identifier: "pastDonations" ) as! PastDonationsViewController
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
 
+        
+    }
+    
     /*
     // MARK: - Navigation
 

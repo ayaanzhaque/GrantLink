@@ -158,16 +158,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdp-Bc-kQx">
-                                <rect key="frame" x="262" y="463" width="158" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="direct to viewcontroller">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="NeC-bI-tgs" kind="show" id="VDq-O8-eDH"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.55294117647058827" green="0.73333333333333328" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="0.55186748500000005" green="0.73502260450000001" blue="0.83923178909999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1643,8 +1633,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="backPressed:" destination="8uz-8m-GPx" eventType="touchUpInside" id="5tY-4W-YSO"/>
                                     <action selector="backPressed:" destination="GHt-Oy-dTv" eventType="touchUpInside" id="D5p-Dv-92x"/>
-                                    <action selector="backPressed:" destination="8uz-8m-GPx" eventType="touchUpInside" id="dqm-MO-zAg"/>
                                     <action selector="backPressed:" destination="NeC-bI-tgs" eventType="touchUpInside" id="fuP-eV-6Bs"/>
                                 </connections>
                             </button>
@@ -1761,7 +1751,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="DhN-wU-BX3"/>
+        <segue reference="afc-mj-LqS"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.54374402759999996" green="0.69964039330000005" blue="0.80785918239999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>
