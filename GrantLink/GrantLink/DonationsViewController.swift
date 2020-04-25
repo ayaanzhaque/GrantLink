@@ -42,7 +42,7 @@ class DonationsViewController: UIViewController, UITableViewDelegate {
         }
     }
     
-    var data = ["user1                                      REPORT SUBMITTED", "user2                                     REPORT SUBMITTED", "user3                                     REPORT SUBMITTED", "user4                              PLEASE SUBMIT REPORT"]
+    var data = ["John                                      Submitted", "Mark                                     Submitted", "Devontae                                     Submitted", "Viraaj                              Pending"]
 
     
     override func viewDidLoad() {
@@ -56,7 +56,7 @@ class DonationsViewController: UIViewController, UITableViewDelegate {
     
     @IBAction func backPressed(_ sender: Any) {
         
-        let vc = self.storyboard?.instantiateViewController(identifier: "donor" ) as! DonorViewController
+        let vc = self.storyboard?.instantiateViewController(identifier: "homeless" ) as! HomelessViewController
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)
         

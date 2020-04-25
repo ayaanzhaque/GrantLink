@@ -37,11 +37,15 @@ class ReportViewController: UIViewController,UIImagePickerControllerDelegate, UI
         // Do any additional setup after loading the view.
     }
     
-    let changedText = "user4                                     REPORT SUBMITTED"
+    let changedText = "Viraaj                                     Submitted"
     
     @IBAction func submitPressed(_ sender: Any) {
         
-        performSegue(withIdentifier: "submitIdentifier", sender: self)
+        let vc = self.storyboard?.instantiateViewController(identifier: "donations" ) as! DonationsViewController
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
+        vc.data[3] = self.changedText
+
         
     }
     
