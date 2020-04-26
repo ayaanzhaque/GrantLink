@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         }
         
-        createNotification(title: "testTitle", body: "testBody", timer: 5)
+        createNotification(title: "Donation!", body: "You received $10 from Viraaj!", timer: 20)
       return true
     }
 

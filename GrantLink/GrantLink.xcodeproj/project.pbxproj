@@ -16,7 +16,7 @@
 		C92F5CB6245244F000485BC8 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92F5CB5245244F000485BC8 /* AccountViewController.swift */; };
 		C952DE562454B4E500D72D28 /* DonationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C952DE552454B4E500D72D28 /* DonationsViewController.swift */; };
 		C952DE582454B97A00D72D28 /* PastDonationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C952DE572454B97A00D72D28 /* PastDonationsViewController.swift */; };
-		C952DE5A2454D09900D72D28 /* ViewReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C952DE592454D09900D72D28 /* ViewReportViewController.swift */; };
+		C952DE5C2455078C00D72D28 /* CheckReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C952DE5B2455078C00D72D28 /* CheckReportViewController.swift */; };
 		C965DD732451630B00FCCE99 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965DD722451630B00FCCE99 /* ReportViewController.swift */; };
 		C971F1C4244EC201003F6934 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C971F1C3244EC201003F6934 /* AppDelegate.swift */; };
 		C971F1C6244EC201003F6934 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C971F1C5244EC201003F6934 /* SceneDelegate.swift */; };
@@ -44,7 +44,7 @@
 		C93BECBEE58A1F8F599EB2CC /* Pods-GrantLink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrantLink.release.xcconfig"; path = "Target Support Files/Pods-GrantLink/Pods-GrantLink.release.xcconfig"; sourceTree = "<group>"; };
 		C952DE552454B4E500D72D28 /* DonationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsViewController.swift; sourceTree = "<group>"; };
 		C952DE572454B97A00D72D28 /* PastDonationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastDonationsViewController.swift; sourceTree = "<group>"; };
-		C952DE592454D09900D72D28 /* ViewReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewReportViewController.swift; sourceTree = "<group>"; };
+		C952DE5B2455078C00D72D28 /* CheckReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckReportViewController.swift; sourceTree = "<group>"; };
 		C965DD722451630B00FCCE99 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		C971F1C0244EC201003F6934 /* GrantLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrantLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C971F1C3244EC201003F6934 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 				C92305A92453F4C9002E52BA /* DonorViewController.swift */,
 				C952DE552454B4E500D72D28 /* DonationsViewController.swift */,
 				C952DE572454B97A00D72D28 /* PastDonationsViewController.swift */,
-				C952DE592454D09900D72D28 /* ViewReportViewController.swift */,
+				C952DE5B2455078C00D72D28 /* CheckReportViewController.swift */,
 			);
 			path = GrantLink;
 			sourceTree = "<group>";
@@ -262,6 +262,7 @@
 				C92305A62453F39D002E52BA /* TypeViewController.swift in Sources */,
 				C9E588352450278900CC1441 /* LoginViewController.swift in Sources */,
 				C92305AA2453F4C9002E52BA /* DonorViewController.swift in Sources */,
+				C952DE5C2455078C00D72D28 /* CheckReportViewController.swift in Sources */,
 				8139B0F2245004E9000BC6AE /* UIView+Extensions.swift in Sources */,
 				C971F1C4244EC201003F6934 /* AppDelegate.swift in Sources */,
 				C971F1C6244EC201003F6934 /* SceneDelegate.swift in Sources */,
@@ -274,7 +275,6 @@
 				C952DE562454B4E500D72D28 /* DonationsViewController.swift in Sources */,
 				C997E0EB244FA8F600F11466 /* HomeViewController.swift in Sources */,
 				C92305A82453F4BB002E52BA /* HomelessViewController.swift in Sources */,
-				C952DE5A2454D09900D72D28 /* ViewReportViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

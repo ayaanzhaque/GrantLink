@@ -37,7 +37,7 @@ class ReportViewController: UIViewController,UIImagePickerControllerDelegate, UI
         // Do any additional setup after loading the view.
     }
     
-    let changedText = "Viraaj                                     Submitted"
+    let changedText = "Viraaj                                                         Submitted"
     
     @IBAction func submitPressed(_ sender: Any) {
         
